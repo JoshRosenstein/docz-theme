@@ -25,8 +25,8 @@ const Theme = () => (<ThemeConfig>
   {config => (
     <ModeProvider >
       {({  mode,setTheme })=>{
-        if(mode===null){
-          setTheme(config.themeConfig.mode || 'light')
+        if(config.themeConfig.mode==='dark' && mode===null){
+          setTheme('dark')
         }
         
         return <ThemeProvider theme={mergeTheme(mode,config)}>

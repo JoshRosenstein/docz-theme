@@ -15,7 +15,7 @@ export default {
   description: pkg.description,
   base: '/docz-theme/',
   theme: 'src/index',
-  // themeConfig:{mode:'light'},
+  themeConfig:{mode:'light'},
   //  description: 'assist',
   // indexHtml: `${DOCS}/index.html`,
   //  theme: 'src/theme/index',

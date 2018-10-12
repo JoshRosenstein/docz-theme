@@ -49,7 +49,7 @@ outline:none;
 export const ThemeToggler=()=> <ThemeContext.Consumer>
   {({ toggleTheme, mode }) => (
     <IconButtonLink title='Toggle Theme' onClick={toggleTheme}>
-      {mode==='light' ? <Moon />:<Sun /> }
+      {mode==='dark' ? <Sun />:<Moon /> }
     </IconButtonLink>
 
   
