@@ -10,7 +10,7 @@ import copy from 'copy-text-to-clipboard'
 import getter from 'lodash.get'
 import { ButtonSwap } from '../ButtonSwap'
 import { ButtonLink } from '../Button'
-import * as themes from '@styles/codemirror'
+import {dark,light} from '@styles/codemirror'
 import { get } from '@utils/theme'
 import './ps-scrollbar'
 import 'codemirror/mode/markdown/markdown'
@@ -55,10 +55,12 @@ const Scrollbar = styled(PerfectScrollbar) `
     opacity: 0.4;
   }
 `
+
+
 const preStyles = get('styles.pre')
 const EditorStyled = styled(CodeMirror) `
-  ${themes.dark()};
-  ${themes.light()};
+${dark()};
+${light()};
   ${p => p.theme.docz.mq(preStyles(p))};
   position: relative;
   border-radius: 3px;

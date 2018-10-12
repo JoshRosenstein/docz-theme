@@ -1,6 +1,4 @@
-import { css } from 'emotion';
-
-export default ()=>css`
+export default ()=>`
 /* BASICS */
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */

@@ -12,7 +12,7 @@ import './styles/global'
 
 
 const mergeTheme = (mode,config) => old => {
-  mode=mode || config.themeConfig.mode
+  mode=mode || config.themeConfig.mode || 'light'
   const res= {
     ...old,
   
@@ -26,7 +26,7 @@ const Theme = () => (<ThemeConfig>
     <ModeProvider >
       {({  mode,setTheme })=>{
         if(mode===null){
-          setTheme(config.themeConfig.mode)
+          setTheme(config.themeConfig.mode || 'light')
         }
         
         return <ThemeProvider theme={mergeTheme(mode,config)}>

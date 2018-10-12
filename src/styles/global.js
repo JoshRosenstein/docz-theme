@@ -1,12 +1,12 @@
 import { injectGlobal } from 'emotion'
-// import 'normalize.css';
 import {normalize} from 'polished'
 import codem from './codemirror/css'
 
-// tslint:disable
+
 injectGlobal `
 ${normalize}
-${codem}
+${codem()} 
+
   *, *:before, *:after {
     box-sizing: border-box;
   }
