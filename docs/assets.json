@@ -1,11 +1,10 @@
 {
-  "app.js": "/@roseys/docz-theme/static/js/app.31829feb.js",
-  "elements.js": "/@roseys/docz-theme/static/js/elements.80d75999.js",
-  "getting-started.js": "/@roseys/docz-theme/static/js/getting-started.e195c057.js",
-  "index.js": "/@roseys/docz-theme/static/js/index.4c50006b.js",
-  "components-button.js": "/@roseys/docz-theme/static/js/components-button.024731e3.js",
-  "components-alert.js": "/@roseys/docz-theme/static/js/components-alert.46061996.js",
-  "vendors.js": "/@roseys/docz-theme/static/js/vendors.1a37f837.js",
-  "runtime~app.js": "/@roseys/docz-theme/static/js/runtime~app.dde537718db64fa39831.js",
-  "index.html": "/@roseys/docz-theme/index.html"
+  "app.js": "/docz-theme/static/js/app.0ec9461f.js",
+  "elements.js": "/docz-theme/static/js/elements.80d75999.js",
+  "index.js": "/docz-theme/static/js/index.49a748a0.js",
+  "components-alert.js": "/docz-theme/static/js/components-alert.de4036c1.js",
+  "components-button.js": "/docz-theme/static/js/components-button.053a48d1.js",
+  "vendors.js": "/docz-theme/static/js/vendors.f1edf5ff.js",
+  "runtime~app.js": "/docz-theme/static/js/runtime~app.23fa9b7183173440c6c3.js",
+  "index.html": "/docz-theme/index.html"
 }

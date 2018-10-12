@@ -1,6 +1,5 @@
 import React from 'react'
 
-const DEFAULT_THEME = 'light'
 export const ThemeContext = React.createContext()
 
 
@@ -23,7 +22,7 @@ export class ModeProvider extends React.Component {
     setTheme:this.setTheme
   };
 
-  render () {
+  render () { 
 
     return (
       <ThemeContext.Provider value={this.state}>
@@ -35,7 +34,6 @@ export class ModeProvider extends React.Component {
 
  
 export function ThemeToggleButton (){
-  // Theme Toggler Button 不仅从 context 接收 them 也接收 toggleTheme 函数。
   return (
     <ThemeContext.Consumer>
       {({ toggleTheme, mode }) => (

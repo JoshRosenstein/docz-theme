@@ -28,6 +28,7 @@ export default {
 
   modifyBundlerConfig: config => {
     config.resolve.alias = Object.assign({}, config.resolve.alias, {
+      '@docz': path.resolve(__dirname, 'docz'),
       '@ui': path.resolve(__dirname, 'src/components/ui'),
       '@shared': path.resolve(__dirname, 'src/components/shared'),
       '@styles': path.resolve(__dirname, 'src/styles'),
