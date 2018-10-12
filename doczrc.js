@@ -13,7 +13,7 @@ export default {
   src: './docz',
   title: 'Roseys Docz',
   description: pkg.description,
-  base: `/${libName}/`,
+  base: '/docz-theme/',
   theme: 'src/index',
   // themeConfig:{mode:'light'},
   //  description: 'assist',

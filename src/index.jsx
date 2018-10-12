@@ -18,7 +18,6 @@ const mergeTheme = (mode,config) => old => {
   
     docz: Object.assign({}, {...config.themeConfig, mode, codemirrorTheme: `docz-${mode}`,colors:modes[mode] }, { mq}),
   }
-  console.log(res)
   return res}
 
 
