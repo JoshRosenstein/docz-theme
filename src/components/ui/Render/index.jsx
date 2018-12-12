@@ -3,7 +3,8 @@ import { Fragment, Component } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { ThemeConfig } from 'docz';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
-import styled, { css } from 'react-emotion';
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';

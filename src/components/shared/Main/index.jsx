@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { injectGlobal } from 'emotion'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import get from 'lodash.get'
 
 const Wrapper = styled('div') ({

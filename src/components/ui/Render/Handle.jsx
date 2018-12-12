@@ -1,6 +1,6 @@
 import lighten from 'polished/lib/color/lighten'
 import darken from 'polished/lib/color/darken'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 
 import { styler,getColor,getThemeP } from '@styles/system'
 

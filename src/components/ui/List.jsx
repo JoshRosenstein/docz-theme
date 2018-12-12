@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { styler,getThemeP } from '@styles/system'
 
 export const List = styled('ul')(styler({'':getThemeP('styles.list')})) 

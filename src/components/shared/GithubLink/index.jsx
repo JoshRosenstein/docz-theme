@@ -1,6 +1,7 @@
 import * as React from 'react'
-import styled, { keyframes } from 'react-emotion'
 import { styler,getColor } from '@styles/system'
+import styled from '@emotion/styled'
+import {  keyframes } from '@emotion/core'
 
 const octocatWave = keyframes ({
   '0%, 100%': {

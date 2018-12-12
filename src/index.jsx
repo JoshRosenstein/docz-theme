@@ -1,5 +1,6 @@
 
 import * as React from 'react'
+import { Global, css } from '@emotion/core'
 import { theme, DocPreview, ThemeConfig } from 'docz'
 import { ThemeProvider } from 'emotion-theming'
 import webfont from 'webfontloader'
@@ -8,7 +9,7 @@ import { config } from './config'
 import { mq } from './styles/responsive'
 import * as components from './components/ui'
 import * as modes from './styles/modes'
-import './styles/global'
+import GlobalCss from './styles/global'
 
 
 const mergeTheme = (mode,config) => old => {
@@ -31,6 +32,7 @@ const Theme = () => (<ThemeConfig>
         
         return <ThemeProvider theme={mergeTheme(mode,config)}>
           <React.Fragment>
+          <Global styles={css(GlobalCss)}/>
             {/* <Wrapper ><Toggler onClick={toggleTheme}>Toggle Mode</Toggler></Wrapper>  */}
             <DocPreview components={{
               page: components.Page,

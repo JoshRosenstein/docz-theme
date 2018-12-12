@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 // import { get } from '@utils/theme'
 import { styler,getColor,getThemeP } from '@styles/system'
 //  ${p => p.theme.docz.mq(p.theme.docz.styles.h1)};

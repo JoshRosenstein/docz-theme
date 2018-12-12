@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import Hash from 'react-feather/dist/icons/hash'
 import { Link } from 'docz'
 // import { get } from '@utils/theme'

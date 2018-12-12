@@ -1,7 +1,9 @@
 import React,{Component} from 'react'
 
 import { Link, ThemeConfig } from 'docz'
-import styled, { css } from 'react-emotion'
+import styled from '@emotion/styled'
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import {whenFunctionCallWith} from '@roseys/futils'
 import { styler,getColor } from '@styles/system'
 
@@ -99,7 +101,8 @@ export const linkStyle=styler({
 //     font-weight: 600;
 //   }
 // `
-const LinkAnchor = styled('a')(linkStyle)
+const LinkAnchor = styled('a')()
+
 
 // const LinkAnchor = styled('a') `
 //   ${p => linkStyle(p.theme.docz)};
@@ -130,7 +133,7 @@ export class MenuLink extends Component {
     const props = {
       children,
       onClick,
-      className: css(linkStyle(this.props)) ,// (config.themeConfig),
+     css:linkStyle(this.props) ,// (config.themeConfig),
       innerRef: node => {
         whenFunctionCallWith(node)(innerRef)
         // innerRef && innerRef(node)
@@ -142,7 +145,7 @@ export class MenuLink extends Component {
 
     return (<Wrapper active={active}>
  
-      {item.href?<LinkAnchor {...props} href={item.href} target="_blank"/>:item.route?<Link {...props} to={route}/>: <LinkAnchor {...props} href="#"/> }
+      {item.href?<LinkAnchor {...props} href={item.href} target="_blank"/>:item.route?<Link   {...props} to={route}/>: <LinkAnchor {...props} href="#"/> }
    
  
       {active && item.route && <MenuHeadings route={item.route}/>}

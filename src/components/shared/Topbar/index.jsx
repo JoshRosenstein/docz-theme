@@ -1,5 +1,6 @@
 import * as React from 'react'
-import styled, { css } from 'react-emotion'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import { Docs, Link } from 'docz'
 import { Github,Sun, Moon  } from 'react-feather'
 //import {getThemeP} from "@styles/system";

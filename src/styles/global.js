@@ -1,31 +1,29 @@
-import { injectGlobal } from 'emotion'
 import {normalize} from 'polished'
 import codem from './codemirror/css'
 
 
-injectGlobal `
-${normalize}
-${codem()} 
+const additional=`  
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
+.icon-link {
+  display: none;
+}
 
-  .icon-link {
-    display: none;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+.with-overlay {
+  overflow: hidden;
+}
 
-  .with-overlay {
-    overflow: hidden;
-  }
-
-  html, body, #root {
-    height: 100%;
-    min-height: 100%;
-  }
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+}
 `
+
+export default [normalize(),codem(),additional]

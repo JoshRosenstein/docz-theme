@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { ThemeConfig, Link } from 'docz'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { breakpoints } from '@styles/responsive'
 import {getColor} from '@styles/system'
 import {ThemeToggler} from '../ThemeToggler'

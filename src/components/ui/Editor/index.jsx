@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Component } from 'react'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import rgba from 'polished/lib/color/rgba'
 import BaseCheck from 'react-feather/dist/icons/check'
 import Clipboard from 'react-feather/dist/icons/clipboard'

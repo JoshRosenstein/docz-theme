@@ -1,4 +1,5 @@
-import { css } from 'react-emotion';
+import {  css } from '@emotion/core'
+
 export const theme = () => css `
   .cm-s-docz-light.CodeMirror {
     border-radius: 3px;

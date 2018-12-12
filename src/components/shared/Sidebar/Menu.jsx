@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ChevronDown from 'react-feather/dist/icons/chevron-down'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { styler,getColor } from '@styles/system'
 import {  getActiveFromClass } from './MenuLink'
 

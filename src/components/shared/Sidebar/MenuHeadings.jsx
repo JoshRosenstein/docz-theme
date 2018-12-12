@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Docs, Link } from 'docz'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { getColor,styler } from '@styles/system'
 
 

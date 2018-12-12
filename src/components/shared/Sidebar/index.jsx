@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
 import { Menu as DocsMenu } from 'docz'
 import withSizes from 'react-sizes'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import match from 'match-sorter'
 import flattendepth from 'lodash.flattendepth'
 import { styler,getColor ,media,getThemeP} from '@styles/system'

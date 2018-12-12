@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 // import { get } from '@utils/theme'
 import { styler,getThemeP,getColor } from '@styles/system'
 
